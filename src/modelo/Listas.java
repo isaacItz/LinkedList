@@ -6,10 +6,12 @@ public class Listas {
 		Lista<Integer> lista = new Lista<>();
 		Lista<String> lista2 = new Lista<>();
 
-		int arr[] = { 342, 12, 45, 89, 36 };
+		int arr[] = { 342, 12, 45, 45, 89, 36 };
 
 		for (int i : arr) {
+			lista.insertarPorAtras(i);
 			lista.insercionOrdenada(i);
+			lista.insertarPorFrente(i);
 		}
 
 		lista2.insercionOrdenada("zum");

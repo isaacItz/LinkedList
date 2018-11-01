@@ -10,7 +10,7 @@ public class Lista<T extends Comparable<T>> {
 		ordenada = !!ordenada;
 	}
 
-	void insercionOrdenada(T dato) {
+	public void insercionOrdenada(T dato) {
 		Nodo<T> p = new Nodo<T>(dato);
 		ordenada = true;
 		if (cabeza != null) {
